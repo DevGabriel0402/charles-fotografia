@@ -11,7 +11,9 @@
 @media(max-width: 467px) {
 
     .perfil {
-        max-width: 330px;
+        margin-inline: 20px;
+        padding: 20px 10px;
+        max-width: 100% !important;
     }
 
     .perfil>img {
@@ -24,19 +26,23 @@
     }
 
     .perfil-info .description {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .perfil-info img {
+        width: 38px;
     }
 
     .card-contrate {
-        max-width: 320px;
+        max-width: 350px;
     }
 
     .card-contrate p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .card-contrate p span {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .card-container {

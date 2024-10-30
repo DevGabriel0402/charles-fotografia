@@ -35,6 +35,8 @@ if (innerWidth >= 400) {
     document.getElementById(``)
 }
 
-document.getElementById(`btn-contato`).addEventListener(`click`, () => {
-    window.open(`https://tr.ee/yZiF5A4Wo3`, `_blank`)
-})
+// document.getElementById(`btn-contato`).addEventListener(`click`, () => {
+
+    
+//     window.open(`https://api.whatsapp.com/send/?phone=55${contato}&text&type=phone_number&app_absent=0`, `_blank`)
+// })
