@@ -19,6 +19,65 @@ body {
 
 }
 
+.blur{
+    backdrop-filter: blur(10px) !important;
+    filter: blur(10px) !important;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#formulario{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fafafa50;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 10px;
+    color: #181818;
+    text-align: center;
+    backdrop-filter: blur(10px);
+
+}
+
+#formulario input{
+    border: none;
+    background-color: #181818;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 8px;
+    color: #fafafa;
+    font-size: 16px;
+    outline: none;
+}
+
+#formulario textarea{
+    border: none;
+    background-color: #181818;
+    padding-left: 8px;
+    padding-top: 8px;
+    border-radius: 8px;
+    color: #fafafa;
+    font-size: 16px;
+    outline: none;
+}
+
+#formulario button{
+    height: 30px;
+    border: none;
+    background-color: #fafafa;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
 .card-contrate {
     position: fixed;
     width: 100%;

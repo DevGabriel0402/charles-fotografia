@@ -32,11 +32,13 @@ if (innerWidth >= 400) {
             prevEl: ".swiper-button-prev",
         },
     });
-    document.getElementById(``)
+    
 }
 
-// document.getElementById(`btn-contato`).addEventListener(`click`, () => {
+document.getElementById('submit').addEventListener('click', ()=>{
+    const nome = document.getElementById('inputName').value
+    const email = document.getElementById('inputEmail').value
+    const texto = document.getElementById('inputText').value
 
-    
-//     window.open(`https://api.whatsapp.com/send/?phone=55${contato}&text&type=phone_number&app_absent=0`, `_blank`)
-// })
+    const mensagem = `Olá Charles tudo bem? Meu nome é ${nome} e estou entrando em contato para fazer um orçamento`
+})
