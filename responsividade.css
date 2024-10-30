@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .perfil {
+        margin-inline: 40px;
+    }
+
+    .card-container {
+        padding-inline: 40px;
+    }
+}
+
+@media(max-width: 467px) {
+
+    .perfil {
+        max-width: 330px;
+    }
+
+    .perfil>img {
+        width: 100px;
+        height: fit-content;
+    }
+
+    .perfil-info .name-title {
+        font-size: 20px;
+    }
+
+    .perfil-info .description {
+        font-size: 10px;
+    }
+
+    .card-contrate {
+        max-width: 320px;
+    }
+
+    .card-contrate p {
+        font-size: 10px;
+    }
+
+    .card-contrate p span {
+        font-size: 10px;
+    }
+
+    .card-container {
+        width: 100%;
+        padding-inline: 40px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 350px) {}
