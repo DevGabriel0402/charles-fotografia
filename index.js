@@ -35,3 +35,6 @@ if (innerWidth >= 400) {
     document.getElementById(``)
 }
 
+document.getElementById(`btn-contato`).addEventListener(`click`, () => {
+    window.open(`https://tr.ee/yZiF5A4Wo3`, `blank`)
+})
