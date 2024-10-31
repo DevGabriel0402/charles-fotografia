@@ -5,7 +5,7 @@ window.onload = () => {
         document.getElementById(`container`).classList.remove(`hidden`)
         document.getElementById(`card-contrate`).classList.remove(`hidden`)
         document.getElementById(`footer`).classList.remove(`hidden`)
-    }, 1500)
+    }, 800)
 
 
 }
