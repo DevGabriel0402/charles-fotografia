@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="responsividade.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./src/Image-perfil.jpeg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="index.js" defer></script>
     <title>Charles Gama - Links</title>
@@ -21,7 +22,13 @@
             <h2>Preencha o formulário</h2>
             <input type="text" id="inputName" placeholder="Informe seu nome..." required>
             <input type="emai" id="inputEmail" placeholder="Informe seu melhor email..." required>
-            <textarea rows="6" id="inputText" placeholder="Informe o tipo de evento..." required></textarea>
+            <select id="select" required>
+                <option value="nenhum" selected>Tipo de Evento</option>
+                <option value="Evento">Evento</option>
+                <option value="Debutante">15 anos</option>
+                <option value="Casamento">Casamento</option>
+            </select>
+            <textarea rows="6" id="inputText" placeholder="Envie uma mensagem (opcional)..."></textarea>
             <button id="submit">Conversar agora</button>
         </form>
     </div>
@@ -51,7 +58,7 @@
                     <!-- <a href="#"><img src="./src/x-icon.svg" alt="x-icon"></a> -->
                     <a href="https://www.instagram.com/gama_fts/" target="_blank"><img src="./src/instagram-icon.svg"
                             alt="instagram-icon"></a>
-                    <a href="https://tr.ee/yZiF5A4Wo3" target="_blank"><img src="./src/whatsApp-icon.svg"
+                    <a href="https://wa.me/5531985127512" target="_blank"><img src="./src/whatsApp-icon.svg"
                             alt="whatsApp-icon"></a>
                 </div>
             </div>
@@ -84,12 +91,12 @@
             <p>&nbsp;Fotografia ●</p>
         </div>
         <!-- Cards Link -->
-        <!-- <div class="card-container">
+        <div class="card-container">
             <!-- Cards -->
-        <!-- <a class="card" href="#">
-                Portifólio
+            <a class="card" href="#">
+                Veja alguns Momentos
             </a>
-        </div> -->
+        </div>
         <!-- Carrossel -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">

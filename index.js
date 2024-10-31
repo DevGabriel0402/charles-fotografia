@@ -34,7 +34,7 @@ if (innerWidth >= 400) {
     });
 
     const image = document.querySelectorAll(`.swiper-slide img`)
-    const desiredHeight = 'auto';
+    const desiredHeight = '300px';
 
     image.forEach((img) => {
         img.style.height = desiredHeight;
@@ -62,14 +62,18 @@ document.getElementById('submit').addEventListener('click', () => {
     const nome = document.getElementById('inputName').value
     const email = document.getElementById('inputEmail').value
     const texto = document.getElementById('inputText').value
+    const tipoEvento = document.getElementById(`select`).value
 
-    const mensagem = `Olá Charles tudo bem? Meu nome é ${nome} e estou entrando em contato para fazer um orçamento de ${texto}.
+
+
+    const mensagem = `
+    Olá Charles tudo bem? Meu nome é ${nome} e estou entrando em contato para fazer um orçamento, segue as informações:
+
+    *Tipo de Evento:* ${tipoEvento}
+    *Email:* ${email}
+    *Observação:* ${texto}
     
-caso precise enviar alguma coisa e não pode ser pelo whatsApp aqui está o meu e-mail:
-    
-    ${email}.
-    
-Aguardando sua resposta.`
+    Aguardando sua resposta.`
 
     const uri = encodeURIComponent(mensagem)
 
@@ -77,7 +81,14 @@ Aguardando sua resposta.`
 
     const url = `https://wa.me/55${contato}?text=${uri}`
 
-    window.open(url, `_blank`)
+    if (nome === "" || email === "" || tipoEvento === "nenhum") {
+        alert(`Verifique se foi informado: nome, email e tipo do evento!`)
+        return
+    } else {
+        window.open(url, `_blank`)
+
+    }
+
 
 
 })

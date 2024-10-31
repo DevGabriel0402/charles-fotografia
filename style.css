@@ -84,6 +84,17 @@ body {
     outline: none;
 }
 
+#formulario select {
+    border: none;
+    background-color: #181818;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 8px;
+    color: #fafafa;
+    font-size: 16px;
+    outline: none;
+}
+
 #formulario textarea {
     border: none;
     background-color: #181818;
@@ -128,10 +139,11 @@ body {
     padding: 10px;
     bottom: 40px;
     border-radius: 16px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     z-index: 10;
     opacity: 0;
-    box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(2, 2, 2, 0.25) 0px 1px 1px, rgba(2, 2, 2, 0.13) 0px 0px 1px 1px;
+
 
 
 }
@@ -166,7 +178,7 @@ body {
 
 .card-contrate button {
     padding: 10px;
-    color: #fafafa !important;
+    color: #fafafa;
     background-color: #181818;
     border: none;
     border-radius: 8px;
@@ -288,16 +300,17 @@ body {
 
 .card-container .card {
     width: 100%;
-    height: 100px;
+    height: 30px;
+    font-weight: 600;
     max-width: 100%;
-    padding: 20px;
-    margin-inline: 20px;
+    padding: 10px;
+    margin-inline: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background: #fafafa;
-    color: #181818;
+    background: transparent;
+    color: #fafafa;
     text-transform: uppercase;
     border-radius: 10px;
 
