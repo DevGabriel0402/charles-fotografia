@@ -257,10 +257,12 @@ body {
     align-items: center;
     background-color: #fafafa;
     overflow-x: hidden;
+    margin-block: 20px;
 
 }
 
 .faixa p {
+
     color: #181818;
     white-space: nowrap;
     font-size: 12px;
