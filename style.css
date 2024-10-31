@@ -18,6 +18,23 @@ body {
 
 }
 
+.loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.loading .bar-loading {
+    width: 40px;
+    height: 40px;
+    border-left: 2px solid #fafafa;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #fafafa;
+    border-bottom: 2px solid transparent;
+    border-radius: 25px;
+    animation: loadingAnimate .5s linear infinite;
+}
+
 .blur {
     backdrop-filter: blur(10px) !important;
     filter: blur(10px) !important;
@@ -218,7 +235,7 @@ body {
     border-radius: 10px;
     background-color: #00000020;
     box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
-
+    animation: fadeInDown 1s forwards;
 }
 
 .perfil>img {
@@ -270,6 +287,8 @@ body {
     background-color: #fafafa;
     overflow-x: hidden;
     margin-block: 20px;
+    animation: fadeInDown 2s forwards;
+
 
 }
 
@@ -296,6 +315,8 @@ body {
     justify-content: center;
     gap: 14px;
     padding-block: 20px;
+    animation: fadeInDown 3s forwards;
+
 }
 
 .card-container .card {
@@ -320,7 +341,7 @@ body {
     width: 100%;
     height: 100%;
     max-width: 650px;
-
+    animation: fadeInLeft 2s forwards
 }
 
 .swiper-slide {
@@ -363,18 +384,4 @@ footer {
     padding-block: 6px;
     font-size: 12px;
     color: #fafafa;
-}
-
-
-@keyframes animaFaixa {
-
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-        /* Mova 100% para a esquerda */
-    }
-
 }
