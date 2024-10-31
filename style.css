@@ -13,25 +13,50 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     justify-content: center;
 
 
 }
 
-.blur{
+.blur {
     backdrop-filter: blur(10px) !important;
     filter: blur(10px) !important;
 }
 
-.hidden{
+.hidden {
     display: none !important;
 }
 
-#formulario{
-    display: none;
+.modal {
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#btn-fechar {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 20px;
+    z-index: 99;
+    color: #181818;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#btn-fechar::selection {
+    background-color: transparent;
+}
+
+#formulario {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -43,10 +68,11 @@ body {
     color: #181818;
     text-align: center;
     backdrop-filter: blur(10px);
+    animation: enterCard .5s forwards;
 
 }
 
-#formulario input{
+#formulario input {
     border: none;
     background-color: #181818;
     height: 40px;
@@ -57,7 +83,7 @@ body {
     outline: none;
 }
 
-#formulario textarea{
+#formulario textarea {
     border: none;
     background-color: #181818;
     padding-left: 8px;
@@ -68,14 +94,24 @@ body {
     outline: none;
 }
 
-#formulario button{
+#formulario button {
     height: 30px;
     border: none;
     background-color: #fafafa;
     border-radius: 8px;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
 
+}
+
+.btn-fechar {
+    width: 10px;
+    height: 10px;
+    float: right;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer !important;
 }
 
 .card-contrate {
