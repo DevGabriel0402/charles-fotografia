@@ -312,9 +312,11 @@ body {
 
 .swiper-slide {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
 }
+
+
 
 .swiper-slide img::selection {
     background-color: transparent;

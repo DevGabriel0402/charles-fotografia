@@ -22,7 +22,7 @@ if (innerWidth >= 400) {
 } else {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        // spaceBetween: 30,
+        centeredSlides: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -32,6 +32,15 @@ if (innerWidth >= 400) {
             prevEl: ".swiper-button-prev",
         },
     });
+
+    const image = document.querySelectorAll(`.swiper-slide img`)
+    const desiredHeight = 'auto';
+
+    image.forEach((img) => {
+        img.style.height = desiredHeight;
+    });
+
+
 
 }
 
