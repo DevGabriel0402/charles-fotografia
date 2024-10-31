@@ -39,10 +39,15 @@
 
     .card-contrate p {
         font-size: 12px;
+    -webkit-text-stroke: 0.1px black;
+
+
     }
 
     .card-contrate p span {
         font-size: 12px;
+    -webkit-text-stroke: 0.05px black;
+
     }
 
     .card-container {
