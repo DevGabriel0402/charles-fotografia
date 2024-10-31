@@ -56,11 +56,11 @@ document.getElementById('submit').addEventListener('click', () => {
 
     const mensagem = `Olá Charles tudo bem? Meu nome é ${nome} e estou entrando em contato para fazer um orçamento de ${texto}.
     
-    caso precise enviar alguma coisa e não pode ser pelo whatsApp aqui está o meu e-mail:
+caso precise enviar alguma coisa e não pode ser pelo whatsApp aqui está o meu e-mail:
     
     ${email}.
     
-    Aguardando sua resposta.`
+Aguardando sua resposta.`
 
     const uri = encodeURIComponent(mensagem)
 
