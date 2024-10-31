@@ -287,7 +287,6 @@ body {
     background-color: #fafafa;
     overflow-x: hidden;
     margin-block: 20px;
-    animation: fadeInDown 2s forwards;
 
 
 }
@@ -297,7 +296,7 @@ body {
     color: #181818;
     white-space: nowrap;
     font-size: 12px;
-    animation: animaFaixa 5s linear infinite reverse;
+    animation: animaFaixa 5s linear infinite reverse !important;
     pointer-events: none;
     text-transform: uppercase;
 
