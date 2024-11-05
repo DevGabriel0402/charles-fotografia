@@ -1,6 +1,7 @@
 
 window.onload = () => {
     setTimeout(() => {
+      document.getElementById("body").style.overflowY = "hidden";
         document.getElementById(`loading`).classList.add(`hidden`)
         document.getElementById(`container`).classList.remove(`hidden`)
         document.getElementById(`card-contrate`).classList.remove(`hidden`)
@@ -59,12 +60,16 @@ document.getElementById(`btn-contato`).addEventListener(`click`, () => {
     document.getElementById(`modal`).style.display = `flex`;
     document.getElementById(`card-contrate`).style.display = `none`;
     document.getElementById(`container`).style.filter = `blur(5px)`
+    document.getElementById("body").style.overflowY = "hidden";
+
 })
 
 document.getElementById(`btn-fechar`).addEventListener(`click`, () => {
     document.getElementById(`modal`).style.display = `none`;
     document.getElementById(`card-contrate`).style.display = `flex`;
     document.getElementById(`container`).style.filter = `blur(0)`
+    document.getElementById("body").style.overflowY = "auto";
+
 
 
 })
